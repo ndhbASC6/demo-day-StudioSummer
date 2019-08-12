@@ -10,32 +10,36 @@
     <title>Application</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <button id="home"><a href="index.html">Home</a></button>
         <button id="application"><a href="application.html">Apply Now</a></button>
         <button id="about"><a href="about.html">Our Story</a></button>
         <button id="team"><a href="team.html">Meet the Team</a></button>
     </nav>
     <form class="application">
-        <input id="first-name" placeholder="First Name">
-        <input id="last-name" placeholder="Last Name">
-        <input id="email" placeholder="Email">
-        <input id="recommendation" placeholder="Teacher Recommendation">
-        <input id="university" placeholder="University of choice">
-        <input id="reason" placeholder="Reason for Access">
-        <tr>
-            <td valign="top">
-                <label for="icon">PNG Image</label>
-            </td>
-            <td valign="top">
-                <input accept=".png" type="file" id="uploadPNG" name="icon">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align:center"> 
-                <button type="submit">Upload PNG</button> 
-            </td> 
-        </tr>
+        <div class="info">
+            <input id="first-name" placeholder="First Name">
+            <input id="last-name" placeholder="Last Name">
+            <input id="email" placeholder="Email">
+            <input id="recommendation" placeholder="Teacher Recommendation">
+            <input id="university" placeholder="University of choice">
+            <input id="reason" placeholder="Reason for Access">
+        </div>
+        <div class="files">
+            <tr>
+                <td valign="top">
+                    <label for="icon">PNG Image</label>
+                </td>
+                <td valign="top">
+                    <input accept=".png" type="file" id="uploadPNG" name="icon">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align:center"> 
+                    <button type="submit">Upload PNG</button> 
+                </td> 
+            </tr>
+        </div>
     </form>
     
 </body>
