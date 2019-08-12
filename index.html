@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link href="lib/style.css" rel="stylesheet" type="text/css"/>
+    <title>StudySpace</title>
+</head>
+<body>
+    <nav class="navbar z-depth-0 grey lighten-4">
+        <button id="home"><a href="index.html">Home</a></button>
+        <button id="application"><a href="application.html">Apply Now</a></button>
+        <button id="about"><a href="about.html">Our Story</a></button>
+        <button id="team"><a href="team.html">Meet the Team</a></button>
+    </nav>
+</body>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-storage.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6gJsYCO7zWTeX6W1BC6JUUq2uObsDyRM",
+    authDomain: "summer-study-space.firebaseapp.com",
+    databaseURL: "https://summer-study-space.firebaseio.com",
+    projectId: "summer-study-space",
+    storageBucket: "summer-study-space.appspot.com",
+    messagingSenderId: "388448094822",
+    appId: "1:388448094822:web:f03d67d85e899119"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="lib/script.js" type="text/javascript" defer></script>
+</html>
