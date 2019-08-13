@@ -1,17 +1,22 @@
+html{
+    height:100%;
+}
+
+
+
 body{
     margin:0px;
     border:0px;
     padding:0px;
+    height:100%;
 }
 
 
 a{
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
-/* h1{
-    color: red;
-} */
+
 
 .navbar{
     
@@ -19,16 +24,12 @@ a{
     display:flex;
     justify-content: space-around;
     margin:20px;
-    margin-left:0px;
-    margin-right:0px;
+    
     background-color: white;
-    width:100%;
+    width:30%;
 
     
-    /* (this is for having the nav bar stick to the top. I think it works) */
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
+    
     
 
 
@@ -42,7 +43,7 @@ a{
 button{
     border-radius: 5px;
     padding:5px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:rgb(255, 253, 208);
 
 
@@ -53,9 +54,8 @@ button{
 
 }
 
-button:hover{
+a:hover{
     transform: scale(1.1);
-    /* box-shadow: 2px 2px 2px rgb(255, 255, 255); */
     z-index:1;
 }
 
@@ -63,9 +63,6 @@ button:hover{
 #header{
     display:flex; 
      justify-content: center;
-     /* margin:20px;
-     width:40%;
-     height:40%; */
 
      
 
@@ -76,37 +73,142 @@ button:hover{
 
     display:flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:flex-end;
    
-    margin-left:5px;
+    margin-right:5px;
+    padding-right:10%;
 
 
 }
 
-/* body{
-     background-color: rgb(40, 166, 224); 
     
 
-} */
 
 img{
-    /* box-shadow: 0 0 4px 4px; */
     
-    /* rgb(3, 123, 179); */
 
 
     margin-top:40px;
 }
 
-header2{
-    display:flex; 
-    justify-content: center;
-}
+
 
 .text{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-left:5px;
     
 }
 
+#story{
+    display:flex;
+    justify-content: center;
 
+}
+
+
+#homebox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+
+    
+    
+
+}
+
+    
+
+
+#title{
+   
+
+
+    font-size: 32px;
+
+
+    color:navy;
+    
+}
+
+
+#idk{
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+#idk3{
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+
+
+
+
+
+#idk3 img{
+    margin-top:0px;
+    
+}
+
+#logo{
+    display:flex;
+    justify-content: flex-start;
+}
+
+
+
+/* #homebox{
+    animation: slide 1s ease-in-out;
+
+}
+
+#homebox{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:100vh;
+    animation:slide 40s infinite;
+
+}
+
+#homebox{
+    color:#fff;
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+@keyframes slide{
+    0%{
+        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
+    }
+
+    20%{
+        background-image: url("/lib/assets/download\ \(1\).jfif");
+    }
+
+    40%{
+        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
+    }
+
+    60%{
+        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
+    }
+
+    80%{
+        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
+    }
+
+    100%{
+        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
+    }
+} */
