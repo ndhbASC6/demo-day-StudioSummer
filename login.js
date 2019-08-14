@@ -56,22 +56,24 @@ loginForm.addEventListener('submit', (e) => {
     // console.log(cred.user);
   });
 });
+let count = 0;
 newButton.addEventListener('click', (e) => {
   e.preventDefault();
-  var ref = firebase.database().ref();
-  ref.on("value", function(snapshot) {
-    let thing = snapshot.val();
-    const arr = Object.keys(thing).map(i => thing[i]);
-    // arr.push(thing);
-    console.log(arr);
-    console.log(typeof arr);
-    for(let i = 0; i < arr.length; i++) {
-      createCard(arr[i], i);
-    }
-  }, function (error) {
-    console.log("Error: " + error.code);
-  });
-  
+  if(count === 0) {
+    const ref = firebase.database().ref();
+    ref.on("value", function(snapshot) {
+      let thing = snapshot.val();
+      const arr = Object.keys(thing).map(i => thing[i]);
+      // arr.push(thing);
+      console.log(arr);
+      console.log(typeof arr);
+      loopCreate(arr);
+    }, function (error) {
+      console.log("Error: " + error.code);
+    });
+    count++;
+    console.log(count);
+  }
 });
 
 // loopCreate(list);
