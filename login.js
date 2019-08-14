@@ -1,4 +1,4 @@
-const main = document.querySelector(".applicants")
+const main = document.querySelector("#test")
 const createCard = (obj,indx) =>{
    //card that contains user info
    const newCard = document.createElement("div")
@@ -12,10 +12,14 @@ const createCard = (obj,indx) =>{
    const firstName = document.createElement('li');
    const lastName = document.createElement('li');
    const email = document.createElement('li');
-   const college = document.createElement('li')
+   const college = document.createElement('li');
+   const essay = document.createElement('li');
 
   firstName.innerHTML = obj.FIRSTNAME;
   lastName.innerHTML = obj.LASTNAME; 
+  email.innerHTML = obj.EMAIL;
+  college.innerHTML = obj.UNIVERSITY;  
+  essay.innerHTML = obj.REASON;
 //    name.innerHTML= Name: ${title(list[indx].name.first)}  ${title(list[indx].name.last)}
 //    email.innerHTML = Email: ${list[indx].email}
 //    age.innerHTML = Age: ${list[indx].dob.age}
@@ -24,6 +28,7 @@ const createCard = (obj,indx) =>{
    lst.appendChild(lastName)
    lst.appendChild(email)
    lst.appendChild(college)
+   lst.appendChild(essay)
    newCard.appendChild(lst)
    main.appendChild(newCard);
 }
@@ -45,7 +50,6 @@ loginForm.addEventListener('submit', (e) => {
 
   // log the user in
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
-    link.href = "user-list.html";
     link.innerHTML = "see applicant list";
     newButton.appendChild(link);
     loginForm.appendChild(newButton);
@@ -60,12 +64,9 @@ newButton.addEventListener('click', (e) => {
     let thing = snapshot.val();
     arr.push(thing);
     console.log(arr);
-    let str = "";
     for(let i = 0; i < arr.length; i++) {
       createCard(arr[i], i);
-
     }
-    test.innerHTML = str;
   }, function (error) {
     console.log("Error: " + error.code);
   });
