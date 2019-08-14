@@ -56,14 +56,15 @@ loginForm.addEventListener('submit', (e) => {
     // console.log(cred.user);
   });
 });
-const arr = [];
 newButton.addEventListener('click', (e) => {
   e.preventDefault();
   var ref = firebase.database().ref();
-  ref.on("child_added", function(snapshot) {
+  ref.on("value", function(snapshot) {
     let thing = snapshot.val();
-    arr.push(thing);
+    const arr = Object.keys(thing).map(i => thing[i]);
+    // arr.push(thing);
     console.log(arr);
+    console.log(typeof arr);
     for(let i = 0; i < arr.length; i++) {
       createCard(arr[i], i);
     }

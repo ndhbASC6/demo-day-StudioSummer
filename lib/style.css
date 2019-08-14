@@ -1,58 +1,25 @@
-html{
-    height:100%;
-}
 
-
-
-body{
-    margin:0px;
-    border:0px;
-    padding:0px;
-    height:100%;
-}
-
-
-a{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-
+/* NAV BAR */
 .navbar{
     
-
     display:flex;
     justify-content: space-around;
     margin:20px;
     
     background-color: white;
     width:40%;
-
-    
-    
-    
-
-
-
-
-
-
 }
 
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
 
 button{
     border-radius: 5px;
     padding:5px;
     font-family: 'Montserrat', sans-serif;
     color:rgb(255, 253, 208);
-
-
-
-    
-
-
-
 }
 
 a:hover{
@@ -60,41 +27,24 @@ a:hover{
     z-index:1;
 }
 
-
 #header{
     display:flex; 
-     justify-content: center;
-
-     
-
-    
+    justify-content: center;  
 }
 
 .info{
-
     display:flex;
     flex-direction: column;
     align-items:flex-end;
-   
     margin-right:5px;
     padding-right:10%;
-
-
 }
 
-    
-
-
 img{
-    
-
-
     margin-top:40px;
 }
 
-
-
-.text{
+body{
     font-family: 'Montserrat', sans-serif;
     margin-left:5px;
     
@@ -103,55 +53,29 @@ img{
 #story{
     display:flex;
     justify-content: center;
-
 }
-
 
 #homebox{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100%;
-
-    
-    
-
 }
-
-    
-
 
 #title{
-   
-
-
     font-size: 32px;
-
-
     color:navy;
-    
 }
-
 
 #idk{
     margin:0px;
     font-family: 'Montserrat', sans-serif;
-
 }
-
-
 
 #idk3{
     display:flex;
     justify-content: space-between;
-    
 }
-
-
-
-
-
 
 #idk3 img{
     margin-top:0px;
@@ -163,8 +87,9 @@ img{
     justify-content: flex-start;
 }
 
-
-
-#recommendation{
-    height:100px;
+/* Login */
+.input-field{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
