@@ -15,6 +15,7 @@ body{
 a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
@@ -26,7 +27,7 @@ a{
     margin:20px;
     
     background-color: white;
-    width:30%;
+    width:40%;
 
     
     
@@ -143,7 +144,7 @@ img{
 
 #idk3{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     
 }
 
@@ -164,51 +165,6 @@ img{
 
 
 
-/* #homebox{
-    animation: slide 1s ease-in-out;
-
+#recommendation{
+    height:100px;
 }
-
-#homebox{
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    width:100%;
-    height:100vh;
-    animation:slide 40s infinite;
-
-}
-
-#homebox{
-    color:#fff;
-    width:100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-
-}
-
-@keyframes slide{
-    0%{
-        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
-    }
-
-    20%{
-        background-image: url("/lib/assets/download\ \(1\).jfif");
-    }
-
-    40%{
-        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
-    }
-
-    60%{
-        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
-    }
-
-    80%{
-        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
-    }
-
-    100%{
-        background-image: url("/lib/assets/Education-Essay-Topics-800x400.jpg");
-    }
-} */
