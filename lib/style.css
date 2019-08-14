@@ -47,7 +47,6 @@ img{
 body{
     font-family: 'Montserrat', sans-serif;
     margin-left:5px;
-    
 }
 
 #story{
@@ -177,4 +176,14 @@ padding-bottom: 60px;
     flex-direction: column;
     align-items: center;
     
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+h4{
+    display: flex;
+    justify-content: center;
 }
