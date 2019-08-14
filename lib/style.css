@@ -35,9 +35,9 @@ a:hover{
 .info{
     display:flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items:center;
     margin-right:5px;
-    padding-right:10%;
+   
 }
 
 img{
@@ -93,18 +93,71 @@ body{
     align-items: flex-start;
 }
 
+#verify{
+   
+   
+    color:navy;
+}
 
+#test{
+    color:navy;
+}
 
+.login{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+.card{
+    margin:5px;
+    padding:40px;
+    border:3px;
+    border-color: navy;
+    border-style: solid;
+    border-radius:5px;
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+#card h4{
+    display:flex;
+    justify-content: center;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+#card label{
+    display:flex;
+    justify-content: center;
+}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+button a{
+    color:navy;
+}
+
+.team{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.team img{
+    height:512px;
+    width:340px;
+    border-radius: 50%;
+    border:5px;
+    border-style: solid;
+    border-color:navy;
+}
+
+.description-text{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+#app-card{
+padding-bottom: 60px;
+}
+
+#complete{
+    color:navy;
+}
