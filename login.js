@@ -6,8 +6,6 @@ const createCard = (obj,indx) =>{
    newCard.id = indx;
 // div that contains name, age and email
 
-   const info = document.createElement("div");
-   info.className = "info";
    const lst = document.createElement("ul");
    const firstName = document.createElement('li');
    const lastName = document.createElement('li');
@@ -24,12 +22,12 @@ const createCard = (obj,indx) =>{
 //    email.innerHTML = Email: ${list[indx].email}
 //    age.innerHTML = Age: ${list[indx].dob.age}
 
-   lst.appendChild(firstName)
-   lst.appendChild(lastName)
-   lst.appendChild(email)
-   lst.appendChild(college)
-   lst.appendChild(essay)
-   newCard.appendChild(lst)
+   lst.appendChild(firstName);
+   lst.appendChild(lastName);
+   lst.appendChild(email);
+   lst.appendChild(college);
+   lst.appendChild(essay);
+   newCard.appendChild(lst);
    main.appendChild(newCard);
 }
 const loopCreate=arr=>{
