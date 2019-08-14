@@ -27,21 +27,23 @@
             <br>
             <a id="team" href="team.html">Meet the Team</a>
             <br>
-            <a id="admin" href="login.html">Log In</a>
+            <a id="admin" href="login.html">Admin</a>
         </nav>
       </div>
     <div class="login">
-        <h4>Admin Login</h4><br />
+      <div class="card">
+       <h3>Admin Login</h3><br />
         <form id="login-form">
           <div class="input-field">
-            <input type="email" id="login-email" required />
             <label for="login-email">Email address</label>
-            <input type="password" id="login-password" required />
+            <input type="email" id="login-email" required />
             <label for="login-password">Your password</label>
+            <input type="password" id="login-password" required />
           </div>
           <button id="verify">Login</button>
         </form>
         <div id="test"></div>
+        </div>
       </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
