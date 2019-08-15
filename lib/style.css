@@ -49,9 +49,12 @@ body{
     margin-left:5px;
 }
 
-#story{
+.story{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left:20% ;
+    margin-right:20%;
 }
 
 #homebox{
@@ -187,3 +190,30 @@ h4{
     display: flex;
     justify-content: center;
 }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .navbar{
+  font-size: 12px;    
+justify-content: space-between
+ }
+ .team{
+    flex-direction: column
+}
+ #idk {
+text-align: center;
+}
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+.navbar{
+    width: 90%;
+}
+.team{
+    flex-direction: column
+}
+
+    
+}
+
